@@ -64,7 +64,7 @@
     font-size: 15px; }
 
 .header-top {
-  padding: 20px;
+  padding: 20px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -610,10 +610,17 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
   .advantages-item {
     width: -webkit-calc(33.333% - 20px);
-    width: calc(33.333% - 20px); }
+    width: calc(33.333% - 20px);
+    min-width: 270px; }
     .advantages-item-title {
       text-decoration: none;
       text-transform: uppercase;
@@ -869,3 +876,58 @@
 @media (max-width: 1440px) {
   .slider .container {
     margin-left: 12%; } }
+
+@media (max-width: 1180px) {
+  .container {
+    padding: 0 10px; }
+  .advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .section-decision-title {
+    float: none;
+    text-align: center; }
+  .decision {
+    float: none;
+    text-align: center; }
+  .advantages-item {
+    margin-bottom: 15px; }
+  .work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .news-item {
+      margin-bottom: 30px; }
+  .section-news .container-title {
+    padding-bottom: 50px; }
+  .news-btn {
+    margin-top: 40px; }
+  .service {
+    max-height: 100%; }
+    .service::before {
+      display: none; }
+  .serviceL, .serviceR, .serviceR {
+    float: none;
+    margin: 0 auto; } }
