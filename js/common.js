@@ -24,5 +24,13 @@ $(document).ready(function() {
             $(this).addClass('active');
         }
     });
+
+
+    $('.burger').click(function(){
+        $('.burger__line').toggleClass('active-b');
+        $('.menu').toggleClass('open');
+        $('.wrapper').toggleClass('bg-active');
+
+    });
 });
 
