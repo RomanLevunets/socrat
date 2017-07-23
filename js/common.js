@@ -1,15 +1,17 @@
 $(document).ready(function() {
 
+
+    //slider
     $('.slider').owlCarousel({
         items: 1,
         loop: true,
         nav: true,
         dots: false,
-        smartSpeed: 700,
+        smartSpeed: 1000,
         responsiveClass: true
     });
 
-    //height ====
+    //height service-top block====
     function item(){
         $('.services-top').each(function () {
             var ths = $(this),
@@ -18,6 +20,7 @@ $(document).ready(function() {
         });
     }item();
 
+    //header menu active
     $('.navigation-item-meth').click(function() {
         if (!$(this).hasClass('active')) {
             $('.navigation-item-meth').removeClass('active');
@@ -25,13 +28,15 @@ $(document).ready(function() {
         }
     });
 
-
+    //burger animation
     $('.burger').click(function(){
         $('.burger__line').toggleClass('active-b');
         $('.menu').toggleClass('open');
         $('.wrapper').toggleClass('bg-active');
 
     });
+
+    //service item
     if(document.documentElement.clientWidth > 1000) {
         $('.serviceL-item:not(:last-child)').mouseover(function () {
             $('.serviceL-item:last-child').hide();
