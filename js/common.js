@@ -32,5 +32,22 @@ $(document).ready(function() {
         $('.wrapper').toggleClass('bg-active');
 
     });
+    if(document.documentElement.clientWidth > 1000) {
+        $('.serviceL-item:not(:last-child)').mouseover(function () {
+            $('.serviceL-item:last-child').hide();
+        });
+
+        $('.serviceL-item').mouseleave(function () {
+            $('.serviceL-item:last-child').show();
+        });
+
+        $('.serviceR-item:not(:last-child)').mouseover(function () {
+            $('.serviceR-item:last-child').hide();
+        });
+
+        $('.serviceR-item').mouseleave(function () {
+            $('.serviceR-item:last-child').show();
+        });
+    }
 });
 

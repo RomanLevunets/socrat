@@ -424,9 +424,8 @@
   text-align: right; }
   .serviceL-item, .serviceR-item {
     padding: 14px;
-    padding-top: 28px;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
+    padding-top: 38px;
+    padding-bottom: 25px;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     -webkit-transition: .3s linear;
@@ -489,7 +488,8 @@
       font-size: 0;
       padding-right: 100px;
       color: #737373;
-      margin-top: 10px; }
+      margin-top: 10px;
+      line-height: 1.4; }
     .serviceL-item-str {
       position: absolute;
       top: 50%;
@@ -501,59 +501,62 @@
 .serviceR {
   float: right;
   text-align: left; }
-  .serviceR-item:hover .serviceR-item-txt {
-    font-size: 15px; }
-  .serviceR-item-title {
-    padding-left: 100px; }
-    .serviceR-item-title:hover .serviceR-item-icon {
-      -webkit-transition: background .15s linear;
-      -o-transition: background .15s linear;
-      transition: background .15s linear;
-      background: #f9d100; }
-  .serviceR-item-icon {
-    position: absolute;
-    left: 2px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    border: 2px solid #f9d100;
-    -webkit-border-radius: 50%;
-            border-radius: 50%; }
-    .serviceR-item-icon::before {
-      content: " ";
-      width: 42px;
-      height: 42px;
-      display: block;
-      line-height: 42px;
-      margin: 0 auto;
-      vertical-align: middle;
-      background-image: url("../img/services-sprite.png");
-      background-position: 0 0;
-      position: relative;
+  .serviceR-item {
+    position: relative; }
+    .serviceR-item:hover .serviceR-item-txt {
+      font-size: 15px; }
+    .serviceR-item-title {
+      padding-left: 100px; }
+      .serviceR-item-title:hover .serviceR-item-icon {
+        -webkit-transition: background .15s linear;
+        -o-transition: background .15s linear;
+        transition: background .15s linear;
+        background: #f9d100; }
+    .serviceR-item-icon {
+      position: absolute;
+      left: 2px;
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
-  .serviceR-item-txt {
-    -webkit-transition: .1s linear;
-    -o-transition: .1s linear;
-    transition: .1s linear;
-    font-size: 0;
-    padding-left: 100px;
-    color: #737373;
-    margin-top: 10px; }
-  .serviceR-item-str {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 100px; }
+              transform: translateY(-50%);
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      border: 2px solid #f9d100;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+      .serviceR-item-icon::before {
+        content: " ";
+        width: 42px;
+        height: 42px;
+        display: block;
+        line-height: 42px;
+        margin: 0 auto;
+        vertical-align: middle;
+        background-image: url("../img/services-sprite.png");
+        background-position: 0 0;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); }
+    .serviceR-item-txt {
+      -webkit-transition: .1s linear;
+      -o-transition: .1s linear;
+      transition: .1s linear;
+      font-size: 0;
+      padding-left: 100px;
+      color: #737373;
+      margin-top: 10px;
+      line-height: 1.4; }
+    .serviceR-item-str {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 100px; }
 
 .service-icon2::after {
   -webkit-border-radius: 8px;
@@ -1042,6 +1045,8 @@
     padding-bottom: 20px; } }
 
 @media (max-width: 1000px) {
+  .container {
+    overflow: hidden; }
   .header-top {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -1133,13 +1138,23 @@
   .service {
     max-height: 100%; }
     .service::before {
-      display: none; }
+      top: 100px;
+      bottom: 0;
+      left: auto;
+      right: -240px;
+      z-index: 1;
+      -webkit-background-size: cover;
+              background-size: cover; }
   .serviceL, .serviceR, .serviceR {
     float: none;
     width: 65%;
     margin: 0 auto; }
   .serviceL, .serviceR {
-    text-align: left; }
+    text-align: left;
+    z-index: 5;
+    position: relative;
+    margin: 0;
+    width: 55%; }
   .serviceL-item-title, .serviceR-item-title {
     padding-left: 100px;
     padding-right: 0;
@@ -1151,9 +1166,9 @@
     display: inline-block;
     text-align: left; }
   .serviceL-item-txt, .serviceR-item-txt {
-    padding-right: auto;
-    padding-left: 100px;
-    display: none; } }
+    display: none;
+    padding-right: 0;
+    padding-left: 100px; } }
 
 @media (max-width: 768px) {
   .burger {
@@ -1188,6 +1203,8 @@
   .services-top-txt {
     float: none;
     width: 100%; }
+  .service::before {
+    right: -230px; }
   .services-top-img {
     float: none;
     width: 100%; }
@@ -1202,7 +1219,7 @@
   .service {
     padding: 40px 0; }
   .serviceL, .serviceR {
-    width: 100%; }
+    width: 60%; }
   .services-top-txt {
     padding-right: 0; }
   .section-advantages {
@@ -1228,6 +1245,12 @@
     height: 100px; }
   .news-item {
     width: 70%; } }
+
+@media (max-width: 600px) {
+  .service::before {
+    display: none; }
+  .serviceL, .serviceR {
+    width: 100%; } }
 
 @media (max-width: 560px) {
   .news-item {
