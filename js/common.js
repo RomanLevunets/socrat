@@ -78,11 +78,13 @@ $(document).ready(function() {
         }
     });
 
-    $('a#license').fancybox({});
+    $('a#license').fancybox({
+        'padding' : '15px'
+    });
 
     $('a#gallery').fancybox({
         'loop': true,
-        'showNavArrows': true,
+        'showNavArrows': true
     });
 });
 

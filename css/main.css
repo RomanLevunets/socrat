@@ -634,9 +634,8 @@
       -ms-flex-line-pack: center;
           align-content: center; }
   .advantages-item {
-    width: -webkit-calc(33.333% - 20px);
-    width: calc(33.333% - 20px);
-    min-width: 270px; }
+    width: 100%;
+    max-width: 370px; }
     .advantages-item-title, .license-title {
       text-decoration: none;
       text-transform: uppercase;
@@ -1525,6 +1524,13 @@ tr td:last-child {
     font-size: 15px; }
   .advantages-item-txt {
     font-size: 14px; }
+  .advantages {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .advantages-item {
+      margin-right: 15px;
+      margin-bottom: 35px; }
   .work-item-info span {
     font-size: 16px; }
   .work {
@@ -1540,8 +1546,6 @@ tr td:last-child {
       min-width: 215px; }
   .work-item-img {
     width: 215px; }
-  .advantages-item {
-    width: 240px; }
   .advantages-txt {
     padding-left: 25px;
     padding-top: 20px; }
@@ -1618,9 +1622,6 @@ tr td:last-child {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .advantages-item {
-    width: 360px;
-    margin-bottom: 35px; }
   .work {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -1778,6 +1779,8 @@ tr td:last-child {
   .advantages {
     padding-top: 25px;
     padding-bottom: 25px; }
+    .advantages-item {
+      margin-right: 0; }
   .section-work {
     padding-top: 40px; }
   .section-work .container-title {
@@ -1949,8 +1952,6 @@ tr td:last-child {
     font-size: 14px; }
   .advantages-img, .News-img {
     height: 200px; }
-  .advantages-item {
-    width: 300px; }
   .advantages-item-title, .license-title {
     font-size: 14px; }
   .advantages-item-txt {
