@@ -54,5 +54,35 @@ $(document).ready(function() {
             $('.serviceR-item:last-child').show();
         });
     }
+
+    $('.News-tab li').click(function() {
+        if (!$(this).hasClass('active')) {
+            $('.News-tab li').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
+
+    $('.pagination li').click(function() {
+        if (!$(this).hasClass('active')) {
+            $('.pagination li').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
+
+    $('.sidebar-item').click(function() {
+        if (!$(this).hasClass('active')) {
+            $('.sidebar-item').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
+    $('a#license').fancybox({});
+
+    $('a#gallery').fancybox({
+        'loop': true,
+        'showNavArrows': true,
+    });
 });
 
