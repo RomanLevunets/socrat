@@ -164,11 +164,11 @@
   border-color: #dbdbdb;
   text-align: center;
   line-height: 60px; }
-  .navigation-item {
+  .navigation li {
     display: inline-block;
     position: relative;
     margin: 0 12px; }
-    .navigation-item.active::after {
+    .navigation li.active::after {
       content: " ";
       position: absolute;
       top: 0;
@@ -177,9 +177,9 @@
       height: 3px;
       display: block;
       background: #f9d100; }
-    .navigation-item.active a {
+    .navigation li.active a {
       color: #000; }
-    .navigation-item a {
+    .navigation li a {
       position: relative;
       padding-top: 22px;
       padding-bottom: 20px;
@@ -188,7 +188,7 @@
       text-transform: uppercase;
       font: 100% "PNBold", sans-serif;
       font-size: 14px; }
-      .navigation-item a:hover {
+      .navigation li a:hover {
         -webkit-transition: color .3s linear;
         -o-transition: color .3s linear;
         transition: color .3s linear;
@@ -1527,7 +1527,7 @@ tr td:last-child {
     width: 170px;
     height: 50px;
     line-height: 50px; }
-  .navigation-item a {
+  .navigation li a {
     font-size: 12px;
     padding-top: 24px; }
   .slider-item-motto {
