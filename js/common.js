@@ -21,9 +21,9 @@ $(document).ready(function() {
     }item();
 
     //header menu active
-    $('.navigation-item').click(function() {
+    $('.navigation li').click(function() {
         if (!$(this).hasClass('active')) {
-            $('.navigation-item').removeClass('active');
+            $('.navigation li').removeClass('active');
             $(this).addClass('active');
         }
     });
@@ -71,9 +71,9 @@ $(document).ready(function() {
     });
 
 
-    $('.sidebar-item').click(function() {
+    $('.sidebar li').click(function() {
         if (!$(this).hasClass('active')) {
-            $('.sidebar-item').removeClass('active');
+            $('.sidebar li').removeClass('active');
             $(this).addClass('active');
         }
     });
