@@ -1265,7 +1265,7 @@
   height: 100%;
   width: 100%;
   font-size: 0; }
-  .sidebar-item {
+  .sidebar li {
     border-bottom: 1px solid #dbdbdb;
     width: 100%;
     border-left: 1px solid #dbdbdb;
@@ -1273,33 +1273,33 @@
     -webkit-transition: .2s linear;
     -o-transition: .2s linear;
     transition: .2s linear; }
-    .sidebar-item:hover {
+    .sidebar li:hover {
       padding-left: 15px; }
-    .sidebar-item.active {
+    .sidebar li.active {
       border: 2px solid #ffd105; }
-      .sidebar-item.active a {
+      .sidebar li.active a {
         color: #000; }
-    .sidebar-item:first-child {
+    .sidebar li:first-child {
       border-top: 1px solid #dbdbdb;
       border-left: 1px solid #dbdbdb;
       border-right: 1px solid #dbdbdb;
       -webkit-border-radius: 15px 15px 0 0;
               border-radius: 15px 15px 0 0; }
-      .sidebar-item:first-child.active {
+      .sidebar li:first-child.active {
         border: 2px solid #ffd105; }
-        .sidebar-item:first-child.active a {
+        .sidebar li:first-child.active a {
           color: #000; }
-    .sidebar-item:last-child {
+    .sidebar li:last-child {
       border-bottom: 1px solid #dbdbdb;
       border-left: 1px solid #dbdbdb;
       border-right: 1px solid #dbdbdb;
       -webkit-border-radius: 0 0 15px 15px;
               border-radius: 0 0 15px 15px; }
-      .sidebar-item:last-child.active {
+      .sidebar li:last-child.active {
         border: 2px solid #ffd105; }
-        .sidebar-item:last-child.active a {
+        .sidebar li:last-child.active a {
           color: #000; }
-    .sidebar-item-meth {
+    .sidebar li a {
       font: 100% "PNSemibold", sans-serif;
       font-size: 18px;
       text-decoration: none;
@@ -1584,7 +1584,7 @@ tr td:last-child {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-  .sidebar-item-meth {
+  .sidebar li a {
     font-size: 16px;
     padding: 15px 25px; }
   .content p {
@@ -2016,12 +2016,11 @@ tr td:last-child {
     padding-bottom: 20px; }
   .sidebar {
     text-align: center; }
-  .sidebar-item-meth {
-    padding: 15px 0; }
+  .sidebar li a {
+    padding: 15px 0;
+    font-size: 14px; }
   .content p {
     font-size: 12px; }
-  .sidebar-item-meth {
-    font-size: 14px; }
   .content-photo {
     margin-bottom: 20px; }
   .content-photo-img {
