@@ -21,9 +21,9 @@ $(document).ready(function() {
     }item();
 
     //header menu active
-    $('.navigation-item-meth').click(function() {
+    $('.navigation-item').click(function() {
         if (!$(this).hasClass('active')) {
-            $('.navigation-item-meth').removeClass('active');
+            $('.navigation-item').removeClass('active');
             $(this).addClass('active');
         }
     });
